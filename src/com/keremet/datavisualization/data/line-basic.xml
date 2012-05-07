@@ -1,0 +1,47 @@
+
+<graph width="800" height="400" caption="Monthly Sales" yAxisName="Sales Figure" xAxisName="Months">
+    <labels>
+        <set label="Jan"/>
+        <set label="Feb"/>
+        <set label="Mar"/>
+        <set label="Apr"/>
+        <set label="May"/>
+        <set label="Jun"/>
+        <set label="Jul"/>
+        <set label="Aug"/>
+        <set label="Sep"/>
+        <set label="Oct"/>
+        <set label="Nov"/>
+        <set label="Dec"/>
+    </labels>
+    <chart type="LineChart" isSpline="1">
+        <series name="Company 1">
+            <set value="53"/>
+            <set value="56"/>
+            <set value="65"/>
+            <set value="63"/>
+            <set value="61"/>
+            <set value="44"/>
+            <set value="42"/>
+            <set value="49"/>            
+            <set value="48"/>
+            <set value="56"/>
+            <set value="50"/>
+            <set value="55"/>
+        </series>
+        <series name="Company 2">
+            <set value="33"/>
+            <set value="36"/>
+            <set value="37"/>
+            <set value="42"/>
+            <set value="44"/>
+            <set value="46"/>
+            <set value="48"/>
+            <set value="51"/>            
+            <set value="50"/>
+            <set value="55"/>
+            <set value="62"/>
+            <set value="63"/>
+        </series>   
+    </chart>
+</graph>

@@ -1,0 +1,28 @@
+<graph width="800" height="400" caption="Column Chart with negative values">
+    <labels>
+        <set label="2005 year"/>
+        <set label="2006 year"/>
+        <set label="2007 year"/>
+        <set label="2008 year"/>
+    </labels>
+    <chart type="ColumnChart">
+        <series name="John">
+            <set value="8"/>
+            <set value="5"/>
+            <set value="-5"/>
+            <set value="11.5"/>
+        </series>
+        <series name="Sarah">
+            <set value="18"/>
+            <set value="-8"/>
+            <set value="10"/>
+            <set value="5"/>
+        </series>    
+        <series name="William">
+            <set value="7"/>
+            <set value="5"/>
+            <set value="6.531"/>
+            <set value="-3.2"/>
+        </series>
+    </chart>
+</graph>

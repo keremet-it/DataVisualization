@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="changeme" default="all" basedir=".">
+    
+    <property name="sourcepath" value="../js/"/>
+    <property name="sourcefile" value="../js/datavisualization.js"/>
+    <property name="destfile" value="../js/datavisualization.min.js"/>
+    
+    <target name="all" depends="js.minify">
+    </target>
+    
+    <target name="js.minify">
+        <apply executable="java" parallel="false">
+            <fileset dir="${sourcepath}" includes="datavisualization.js"/>
+            <arg line="-jar"/>
+            <arg path="yuicompressor.jar"/>
+            <arg line="-o ${destfile}"/>
+        </apply>
+    </target>
+    
+</project>

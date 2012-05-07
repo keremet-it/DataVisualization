@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="changeme" default="all" basedir=".">
+    
+    <property name="source.path" value="../"/>
+    <property name="destfile" value="${source.path}/js/Processingjs.pde"/>
+    
+    <target name="all" depends="edit">
+    </target>
+    
+    <target name="edit" depends="concat">
+
+        <replaceregexp match="\t*\s*package.*;" replace="" 
+            file="${destfile}" byline="true" flags="g"/>
+        
+        <replaceregexp match="\t*\s*import.*;" replace="" 
+            file="${destfile}" byline="true" flags="g"/>
+        
+        <replaceregexp match="\s*instanceof\s*" replace=".constructor == " 
+            file="${destfile}" byline="true" flags="g"/>
+        
+        <replaceregexp match="XMLElement\(\s*main" replace="XMLElement\(this" 
+            file="${destfile}" byline="true" flags="g"/>
+        
+        <replaceregexp match="main.textWidth\(text\)" replace="float\($p.textWidth\(text\)\)" 
+            file="${destfile}" byline="true" flags="g"/>
+        
+        <replaceregexp match="Main\s*main\s*,?\;?s*" replace="" 
+            file="${destfile}" byline="true" flags="g"/>
+        
+        <replaceregexp match="this.main\s*=\s*main\s*;" replace="" 
+            file="${destfile}" byline="true" flags="g"/>
+            
+        <replaceregexp match="main\s*,\s*" replace="" 
+            file="${destfile}" byline="true" flags="g"/>    
+        
+        <replaceregexp match="main\." replace="" 
+            file="${destfile}" byline="true" flags="g"/>
+        <replaceregexp match="\(main\)" replace="()" 
+            file="${destfile}" byline="true" flags="g"/>
+           
+        <replaceregexp match="listAttributes\(\)" replace="attributes"
+            file="${destfile}" byline="true" flags="g"/>
+        <replaceregexp match="names\[k\].*names\[k\]\)" replace='names\[k\]\["name"\]\.toLowerCase\(\), names\[k\]\["value"\]'
+            file="${destfile}" byline="true" flags="g"/>
+        
+        <replaceregexp match="new\s*Float" replace="float"
+            file="${destfile}" byline="true" flags="g"/>
+            
+        <replaceregexp match="new\s*Integer" replace="int"
+            file="${destfile}" byline="true" flags="g"/>
+            
+        <replaceregexp match="Integer\.parseInt" replace="parseInt"
+            file="${destfile}" byline="true" flags="g"/>
+            
+        <replaceregexp match="Integer.MAX_VALUE" replace="Number.MAX_VALUE"
+            file="${destfile}" byline="true" flags="g"/>            
+            
+        <replaceregexp match="\t*\s*@Override" replace=""
+            file="${destfile}" byline="true" flags="g"/>
+        
+        <replaceregexp match="\/\*@js" replace=""
+            file="${destfile}" byline="true" flags="g"/>
+        
+        <replaceregexp match="@js\*\/" replace=""
+            file="${destfile}" byline="true" flags="g"/>
+        
+        <replaceregexp match="'#'" replace='"#"'
+            file="${destfile}" byline="true" flags="g"/>        
+        
+    </target>
+    
+    <target name="concat">       
+        <concat destfile="${destfile}">
+            <fileset dir="${source.path}" includes="*.java" excludes="MainProcessing.java, Main.java"/>
+            <fileset dir="${source.path}/chart" includes="*.java" excludes="MainProcessing.java, Main.java"/>
+            <fileset dir="${source.path}/interfaces" includes="*.java" excludes="MainProcessing.java, Main.java"/>
+        </concat>
+    </target>
+    
+</project>

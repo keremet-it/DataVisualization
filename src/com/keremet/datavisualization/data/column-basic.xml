@@ -1,0 +1,28 @@
+<graph width="800" height="400" caption="Wheat production by country" yAxisName="Sales Figure (thousands of tons)">
+    <labels>
+        <set label="2005 year"/>
+        <set label="2006 year"/>
+        <set label="2007 year"/>
+        <set label="2008 year"/>
+    </labels>
+    <chart type="ColumnChart">
+        <series name="China">
+            <set value="97445.2"/>
+            <set value="108466.27"/>
+            <set value="109298.3"/>
+            <set value="112463.3"/>
+        </series>
+        <series name="USA">
+            <set value="57280.26"/>
+            <set value="49489.6"/>
+            <set value="55822.7"/>
+            <set value="68026.4"/>
+        </series>
+        <series name="Kazakhstan">
+            <set value="11198.4"/>
+            <set value="13460.5"/>
+            <set value="16466.87"/>
+            <set value="12538.2"/>
+        </series>
+    </chart>
+</graph>

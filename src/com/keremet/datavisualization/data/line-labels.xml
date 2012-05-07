@@ -1,0 +1,47 @@
+
+<graph width="800" height="400" caption="Line Chart with data labels" yAxisName="Sales" xAxisName="Months" showValues="1">
+    <labels>
+        <set label="Jan"/>
+        <set label="Feb"/>
+        <set label="Mar"/>
+        <set label="Apr"/>
+        <set label="May"/>
+        <set label="Jun"/>
+        <set label="Jul"/>
+        <set label="Aug"/>
+        <set label="Sep"/>
+        <set label="Oct"/>
+        <set label="Nov"/>
+        <set label="Dec"/>
+    </labels>
+    <chart type="LineChart">
+        <series name="Jessica">
+            <set value="15"/>
+            <set value="15.2"/>
+            <set value="13"/>
+            <set value="10.1"/>
+            <set value="13.3"/>
+            <set value="19.3"/>
+            <set value="20.9"/>
+            <set value="18.1"/>            
+            <set value="12.1"/>
+            <set value="3.7"/>
+            <set value="6.3"/>
+            <set value="12"/>
+        </series>
+        <series name="James">
+            <set value="4"/>
+            <set value="1"/>
+            <set value="6"/>
+            <set value="14"/>
+            <set value="20"/>
+            <set value="24"/>
+            <set value="26"/>
+            <set value="25"/>            
+            <set value="20"/>
+            <set value="13"/>
+            <set value="14"/>
+            <set value="18"/>
+        </series>   
+    </chart>
+</graph>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="jquery.js"></script>
+        <script src="processing-1.3.6.min.js"></script>
+        <script src="datavisualization.js"></script>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <canvas id="canvas2" width="800" height="300"></canvas>
+        <!--<canvas id="canvas3" data-processing-sources="Processingjs.pde"></canvas>-->
+        <script>
+            var xmlString = "<graph caption='Equipment Rentals' yAxisName='Sales' xAxisName='Months'"+
+                " zoom='1'>"+
+                "<chart type='linechart' isSpline='1'>"+
+                "<series name='ColumnCharasdasad 2'>"+
+                "<set value='2' label='Apples'/>"+
+                "<set value='3' label='Oranges'/>"+
+                "<set value='10' label='Pears'/>"+
+                "</series>"+
+                "</chart>"+
+                "</graph>";
+            
+            $("#canvas2").dv(xmlString);
+            //$("#canvas").dvFromUrl("pie.xml");
+        </script>
+    </body>
+</html>

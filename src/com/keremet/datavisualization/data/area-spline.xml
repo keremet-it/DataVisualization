@@ -1,0 +1,32 @@
+<graph width="800" height="400" caption="Spline-Area Chart">
+    <labels>
+        <set label="2000"/>
+        <set label="2001"/>
+        <set label="2002"/>
+        <set label="2003"/>
+        <set label="2004"/>
+        <set label="2005"/>
+        <set label="2006"/>
+        <set label="2007"/>
+        <set label="2008"/>
+        <set label="2009"/>
+        <set label="2010"/>
+        <set label="2011"/>
+    </labels>
+    <chart type="AreaChart" isSpline="1">
+        <series name="Area 1">
+            <set value="68"/>
+            <set value="73"/>
+            <set value="84"/>
+            <set value="108"/>
+            <set value="102"/>
+            <set value="142"/>
+            <set value="83"/>
+            <set value="91"/>            
+            <set value="73"/>
+            <set value="72"/>
+            <set value="82"/>
+            <set value="90"/>
+        </series>
+    </chart>
+</graph>

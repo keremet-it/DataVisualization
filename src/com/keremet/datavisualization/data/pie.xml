@@ -1,0 +1,14 @@
+
+<graph width="800" height="400" caption="Pie Chart">
+    <chart type="PieChart">
+        <series>
+            <set value="27" label="Michael"/>
+            <set value="12" label="Jane"/>
+            <set value="43" label="John"/>
+            <set value="24" label="Thomas"/>
+            <set value="6" label="Natalie"/>
+            <set value="21" label="Sarah"/>
+            <set value="13" label="William"/>
+        </series>
+    </chart>
+</graph>

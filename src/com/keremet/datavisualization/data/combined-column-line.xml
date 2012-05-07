@@ -1,0 +1,35 @@
+
+<graph caption="Column &amp; Line" width="800" height="400" yAxisName="Sales" xAxisName="Years">
+    <labels>
+        <set label="2007"/>
+        <set label="2008"/>
+        <set label="2009"/>
+        <set label="2010"/>
+        <set label="2011"/>
+    </labels>
+    <chart type="columnchart">
+        <series name="David">
+            <set value="15"/>
+            <set value="12"/>
+            <set value="10"/>
+            <set value="13"/>
+            <set value="14"/>
+        </series>
+        <series name="Alexander">
+            <set value="5"/>
+            <set value="9"/>
+            <set value="16"/>
+            <set value="18"/>
+            <set value="21"/>
+        </series>
+    </chart>
+    <chart type="linechart" isSpline="1">
+        <series name="Victoria">
+            <set value="10"/>
+            <set value="7"/>
+            <set value="18"/>
+            <set value="15"/>            
+            <set value="16"/>            
+        </series>
+    </chart>
+</graph>

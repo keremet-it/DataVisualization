@@ -1,0 +1,27 @@
+<graph caption="Column &amp; Area" width="800" height="400" yAxisName="Sales" xAxisName="Years">
+    <labels>
+        <set label="2007"/>
+        <set label="2008"/>
+        <set label="2009"/>
+        <set label="2010"/>
+        <set label="2011"/>
+    </labels>
+    <chart type="columnchart">
+        <series name="David">
+            <set value="15"/>
+            <set value="-12"/>
+            <set value="1"/>
+            <set value="13"/>
+            <set value="14"/>
+        </series>
+    </chart>
+    <chart type="areachart" isSpline="1">
+        <series name="Victoria">
+            <set value="5"/>
+            <set value="7"/>
+            <set value="8"/>
+            <set value="5"/>            
+            <set value="6"/>            
+        </series>
+    </chart>
+</graph>

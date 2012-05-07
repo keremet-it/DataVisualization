@@ -1,0 +1,15 @@
+
+<graph caption='Equipment Rentals' width='1200' height='500' yAxisName='Sales' xAxisName='Months' showValues='0' zoom="1">
+    <labels>
+        <set label='Apples'/>
+        <set label='Oranges'/>
+        <set label='Pears'/>
+    </labels>
+    <chart type='areachart' isSpline='1'>
+        <series name='ColumnCharasdasad 2'>
+            <set value='6'/>
+            <set value='3'/>
+            <set value='4'/>
+        </series>
+    </chart>
+</graph>
